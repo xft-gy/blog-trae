@@ -12,6 +12,6 @@ export interface PerformanceMetricsDTO {
   requestsPerSecond: number
 }
 
-export function getPerformanceMetrics(): Promise<PerformanceMetricsDTO> {
+export const getPerformanceMetrics = (): Promise<PerformanceMetricsDTO> => {
   return request.get('/performance')
 }

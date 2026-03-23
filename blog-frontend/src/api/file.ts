@@ -6,7 +6,7 @@ export interface UploadResponse {
   path: string
 }
 
-export function uploadFile(file: File): Promise<UploadResponse> {
+export const uploadFile = (file: File): Promise<UploadResponse> => {
   const formData = new FormData()
   formData.append('file', file)
   return request.post('/files/upload', formData, {
@@ -16,7 +16,7 @@ export function uploadFile(file: File): Promise<UploadResponse> {
   })
 }
 
-export function uploadImage(file: File): Promise<UploadResponse> {
+export const uploadImage = (file: File): Promise<UploadResponse> => {
   const formData = new FormData()
   formData.append('file', file)
   return request.post('/files/upload/image', formData, {

@@ -1,0 +1,15 @@
+com\blog\domain\article\entity\Category.class
+com\blog\domain\article\repository\CategoryRepository.class
+com\blog\domain\user\entity\User.class
+com\blog\domain\article\service\SearchService.class
+com\blog\domain\article\entity\UserLike.class
+com\blog\domain\article\entity\Tag.class
+com\blog\domain\article\repository\UserLikeRepository.class
+com\blog\domain\article\repository\ArticleRepository.class
+com\blog\domain\article\repository\UserFavoriteRepository.class
+com\blog\domain\article\entity\UserFavorite.class
+com\blog\domain\article\entity\Comment.class
+com\blog\domain\article\repository\CommentRepository.class
+com\blog\domain\article\repository\TagRepository.class
+com\blog\domain\user\repository\UserRepository.class
+com\blog\domain\article\entity\Article.class

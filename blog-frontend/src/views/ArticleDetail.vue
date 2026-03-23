@@ -415,7 +415,7 @@ const likeComment = async (comment: CommentDTO) => {
 }
 
 const canDeleteComment = (comment: CommentDTO) => {
-  return userStore.user?.id === comment.userId
+  return userStore.userInfo?.userId === comment.userId
 }
 
 onMounted(() => {

@@ -11,6 +11,6 @@ export interface StatisticsDTO {
   todayTotalViews: number
 }
 
-export function getStatistics(): Promise<StatisticsDTO> {
+export const getStatistics = (): Promise<StatisticsDTO> => {
   return request.get('/statistics')
 }

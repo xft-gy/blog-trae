@@ -28,30 +28,30 @@ export interface UpdateUserStatusRequest {
   status: number
 }
 
-export function getCurrentUserProfile() {
-  return request.get<UserDTO>('/api/users/profile')
+export const getCurrentUserProfile = (): Promise<UserDTO> => {
+  return request.get('/users/profile')
 }
 
-export function updateCurrentUserProfile(data: UpdateUserRequest) {
-  return request.put('/api/users/profile', data)
+export const updateCurrentUserProfile = (data: UpdateUserRequest): Promise<UserDTO> => {
+  return request.put('/users/profile', data)
 }
 
-export function getAllUsers() {
-  return request.get<UserDTO[]>('/api/users')
+export const getAllUsers = (): Promise<UserDTO[]> => {
+  return request.get('/users')
 }
 
-export function getUserById(userId: number) {
-  return request.get<UserDTO>(`/api/users/${userId}`)
+export const getUserById = (userId: number): Promise<UserDTO> => {
+  return request.get(`/users/${userId}`)
 }
 
-export function updateUserRole(userId: number, data: UpdateUserRoleRequest) {
-  return request.put(`/api/users/${userId}/role`, data)
+export const updateUserRole = (userId: number, data: UpdateUserRoleRequest): Promise<void> => {
+  return request.put(`/users/${userId}/role`, data)
 }
 
-export function updateUserStatus(userId: number, data: UpdateUserStatusRequest) {
-  return request.put(`/api/users/${userId}/status`, data)
+export const updateUserStatus = (userId: number, data: UpdateUserStatusRequest): Promise<void> => {
+  return request.put(`/users/${userId}/status`, data)
 }
 
-export function deleteUser(userId: number) {
-  return request.delete(`/api/users/${userId}`)
+export const deleteUser = (userId: number): Promise<void> => {
+  return request.delete(`/users/${userId}`)
 }

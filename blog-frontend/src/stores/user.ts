@@ -21,8 +21,7 @@ export const useUserStore = defineStore('user', () => {
 
   const fetchUserInfo = async () => {
     try {
-      const res = await getCurrentUserProfile()
-      const user: UserDTO = res.data
+      const user: UserDTO = await getCurrentUserProfile()
       if (userInfo.value) {
         userInfo.value.nickname = user.nickname
         userInfo.value.avatar = user.avatar
