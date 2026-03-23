@@ -187,7 +187,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue'
+import { ref, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import { ElMessage } from 'element-plus'
 import { User, View, ChatDotRound, Star, Collection, Share, Delete, Loading } from '@element-plus/icons-vue'
