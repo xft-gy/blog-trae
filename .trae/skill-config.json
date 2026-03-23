@@ -1,0 +1,13 @@
+{
+  "disabledSkills": [
+    "algorithmic-art",
+    "brand-guidelines",
+    "canvas-design",
+    "claude-api",
+    "doc-coauthoring",
+    "docx",
+    "mcp-builder",
+    "slack-gif-creator",
+    "pptx"
+  ]
+}
